@@ -1,0 +1,69 @@
+<div class="slider-category">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-vector/flat-design-food-facebook-cover_23-2149108159.jpg?w=1380&t=st=1696934911~exp=1696935511~hmac=fffc48ceb7d5067a8a9b85c04e30a9222a0a85d61a4f5d59156ac885c97af133" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/free-psd/thanksgiving-day-banner-template-with-autumn-details_23-2149117091.jpg?t=st=1696858502~exp=1696859102~hmac=0107442f30082fadf92b0018398ec3661e5d8e088d2814af8913ae07521d18d0" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/premium-psd/thanksgiving-landing-page-template-with-autumn-details_23-2149117087.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+<!-- category -->
+<div class="conatiner">
+    <div class="title">
+        <h2>Your food is ready to serve</h2>
+    </div>
+
+
+    <div class="category">
+        <div  *ngFor="let item of catogory">
+            <div class="item" (click)="navigate(item)">
+                <img [src]="item.photoUrl" alt="">
+                <h4> {{ item.categoryName }}</h4>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
